@@ -1,3 +1,4 @@
+https://kamranshakib.github.io/coding-bootcamp-testimonials-slider-master/
 # Frontend Mentor - Coding bootcamp testimonials slider
 
 ![Design preview for the Coding bootcamp testimonials slider coding challenge](./design/desktop-preview.jpg)

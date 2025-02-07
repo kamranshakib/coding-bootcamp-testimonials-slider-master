@@ -1,0 +1,223 @@
+
+@font-face {
+    font-family: JosefinSans;
+    src:url("./Josefin_Sans/static/JosefinSans-Light.ttf"),
+    url("./Josefin_Sans/static/JosefinSans-ExtraLight.ttf") format("ttf");
+        
+    font-weight: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "JosefinSans";
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.main .left{
+    transform: translateX(70px);
+    z-index: 1;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.main .left p{
+    font-size: 30px;
+}
+.left-child .img1{
+    /* border: 2px solid black; */
+    text-align: left;
+    width: 300px;
+}
+.left-child .img1 img{
+    transform: translateX(90px);
+
+}
+.left-content{
+    transform: translateY(-25px);
+}
+.left-child{
+    text-align: left;
+    padding-left: 100px;
+    text-anchor: end;
+    transform: translateY(-30px);    
+}
+.left-child #name{
+    font-weight: 900;
+    font-size: 18px;
+}
+.left-position{
+    margin-top: 15px;
+}
+
+
+
+.main .right{
+    transform: translateX(-50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main .right .imageDokhter{
+    box-shadow: 0px 10px 30px rgba(116, 29, 208, 0.382);
+    margin-top: 50px;
+}
+.main .right .per{
+    background-color: rgba(255, 255, 255, 0.958);
+    width: 100px;
+    height: 45px;
+    transform: translateY(-30px);
+    margin-right: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.right .per .perv:hover{
+    transform: scale(1.2);
+
+}
+.right .per .next:hover{
+    transform: scale(1.2);
+}
+.main .right .per img{
+    width: 12px;
+}
+.next{
+    margin-right: 27px;
+}
+
+.img2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.right{
+    background-image: url('./images/pattern-bg.svg');
+     background-repeat: no-repeat;
+      background-size: 90%;
+       background-position: center;
+}
+
+@media (max-width:1430px) {
+    .right{
+        background-size: 650px;
+    }
+    
+}
+
+@media (max-width:1173px) {
+    .left-child{
+        padding: 0;
+    }
+    
+}
+
+@media (max-width:1000px) {
+    .left-child{
+        padding: 0;
+    }
+    .left-child .left-content p{
+        font-size: 30px;
+        
+    }
+    .left-child{
+        width: 80%;
+    }
+    .main .left{
+        transform: translateX(0px);
+    }
+}
+@media (max-width:838px) {
+    .main{
+       display: flex;
+       flex-direction: column;
+    }
+    .right{
+        order: 1;
+    }
+    .left{
+        order: 2;
+    }
+    .img2{
+        position: absolute;
+       
+        left: 0;
+        top: 900px;
+    }
+    
+}
+@media (max-width:685px) {
+    .main .right{
+        transform: translateX(0px);
+    }
+    .main .right .imageDokhter img{
+        width: 300px;
+    }
+    .right{
+        width: 100%;
+        background-size: 400px;
+    }
+    .left .left-child{
+        transform: translateY(0px);
+        text-align: center;
+        width: 80%;
+        
+    }
+    .left .left-child p{
+        font-size: 20px;
+        color: rgb(76, 76, 76);
+    }
+    .img2{
+        position: fixed;
+        left: 0;
+        bottom: 10px;
+        width: 100%;    
+    }
+    .img2 img{
+        width: 400px;
+
+    }
+    .left-child .img1{
+        text-align: center;
+    }
+    .left-child .img1 img{
+        transform: translateX(0px);
+        text-align: center;
+    
+    }
+    .img1 img{
+        width: 70px;
+        
+    }
+}
+@media (max-width:320px) {
+    .main{
+        overflow-x:hidden;
+    }
+    .left{
+        transform: translateY(-20px);
+    }
+    .left .left-child{
+        width: 90%;
+    }
+    
+}

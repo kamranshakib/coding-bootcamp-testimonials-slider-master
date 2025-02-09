@@ -4,7 +4,7 @@ const change_image = document.getElementById('imgage_change')
 const change_para = document.getElementById('para_change')
 const Name =document.getElementById('name')
 const position = document.getElementById('position')
-
+// change src of image
 perv.addEventListener('click',()=>{
     change_image.setAttribute('src','./images/image-tanya.jpg')
     change_para.innerHTML = "“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”"
